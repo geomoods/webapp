@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="get_userdata.php" server="50.62.169.102" local="131174203050096635" remote="131174119800000000" Dst="2" />
+<file name="signup.php" server="50.62.169.102" local="131171566360950353" remote="131174119800000000" Dst="2" />
+<file name="get_userdata.php" server="50.62.169.102/httpdocs/" local="131439528237160948" remote="131485128600000000" Dst="2" />
+<file name="signup.php" server="50.62.169.102/httpdocs/" local="131331499878933231" remote="131338215600000000" Dst="2" />
+<file name="insert_mood.php" server="50.62.169.102/httpdocs/" local="131485256906305074" remote="131485149000000000" Dst="2" />
+<file name="get_mood.php" server="50.62.169.102/httpdocs/" local="131349385328907062" remote="131400518400000000" Dst="2" />
+<file name="get_user_moods.php" server="50.62.169.102/httpdocs/" local="131397235259405161" remote="131397187800000000" Dst="2" />
+<file name="join_group.php" server="50.62.169.102/httpdocs/" local="131393715650164463" remote="131400518400000000" Dst="2" />
+<file name="groups_list.php" server="50.62.169.102/httpdocs/" local="131468960337741791" remote="131469697200000000" Dst="2" />
+<file name="TimeZone.php" server="50.62.169.102/httpdocs/" local="131225123865437361" remote="131225037600000000" Dst="2" />
+<file name="create_group.php" server="50.62.169.102/httpdocs/" local="131332404765820706" remote="131338215600000000" Dst="2" />
+<file name="db.php" server="50.62.169.102/httpdocs/" local="131253656977229874" remote="131253585000000000" Dst="1" />
+<file name="get_global_group.php" server="50.62.169.102/httpdocs/" local="131398046820912768" remote="131397964800000000" Dst="2" />
+<file name="get_default_group.php" server="50.62.169.102/httpdocs/" local="131243276671308773" remote="131253583200000000" Dst="1" />
+<file name="user_groups_list.php" server="50.62.169.102/httpdocs/" local="131394559794029881" remote="131397187800000000" Dst="2" />
+<file name="get_last_inputdate.php" server="50.62.169.102/httpdocs/" local="131331520296516417" remote="131338215600000000" Dst="2" />
+<file name="get_logged_user_mood.php" server="50.62.169.102/httpdocs/" local="131311617335129073" remote="131311551600000000" Dst="1" />
+<file name="set_update_date.php" server="50.62.169.102/httpdocs/" local="131313482767522420" remote="131313390600000000" Dst="2" />
+<file name="get_last_group_update_date.php" server="50.62.169.102/httpdocs/" local="131314162996320272" remote="131317667400000000" Dst="1" />
+<file name="get_selected_group_data.php" server="50.62.169.102/httpdocs/" local="131398061822688154" remote="131397964200000000" Dst="2" />
+<file name="get_trend.php" server="50.62.169.102/httpdocs/" local="131385788978142616" remote="131386763400000000" Dst="2" />
+<file name="set_group_privacy.php" server="50.62.169.102/httpdocs/" local="131393683495995339" remote="131397189000000000" Dst="2" />
+</dwsync>
