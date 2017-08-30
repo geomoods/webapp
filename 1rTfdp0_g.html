@@ -1,0 +1,313 @@
+<!doctype html>
+<html>
+<head>
+<meta name="theme-color" content="#0069C0" />
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate,max-age=0"  />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, minimum-scale=1.0,initial-scale=1.0,maximum-scale=1.0, user-scalable=no, user-scalable=0,minimal-ui">
+<title>Geomoods</title>
+<script src="js/pace.js"></script>
+<link rel="stylesheet" href="css/stylesheet.css">
+</head>
+
+<body>	
+	<div id="LoginBkgrd">
+			<div id="BoxTitle">Log in</div>
+			<div class="LoginForm">
+				<input id="login" class="TextBox" type="text" placeholder="Username or email">
+				<input id="pwd" class="TextBox" type="text" placeholder="Password">
+			</div>
+			<div id="LoginButton" class="validate_button2_cl"></div>
+					
+			<div id="LoginSignUpText">Not a member yet?</div>
+			<div id="LoginSignUpLink">Sign me up!</div><input id="Action" type="text" hidden value="0">
+	</div>
+	
+<div id="SplashScreen">
+<div class="spinner">
+  <div class="double-bounce1"></div>
+  <div class="double-bounce2"></div>
+</div>
+</div>
+<div id="Application_container">
+	<div id="SlideOutMenu">
+
+		<div id="MemberList_container">
+			<div class="HeaderContainer">
+				<table  border='0' cellspacing='0' cellpadding='0' width='100%'>
+					<tr>
+						<td id="MemberList_GroupName" class='Header_2' align='left'></td>
+						<td id="MemberList_Close" class="cancel"></td>
+					</tr>
+				</table>	
+			</div>
+			<div id="MemberList_table"></div>
+			<div class="MemberCount">
+				<div id="MemberCountValue"></div>
+				<div id="LastUpdate_MemberList" class="LastUpdateExpired"></div>	
+			</div>
+			
+		
+		</div>
+			<div id="SettingsMenu_container">
+				<div class="HeaderContainer">
+				
+			<table  width="100%" border="0" cellspacing='0' cellpadding='0' >
+				<tr>
+				<td class="Header_2">Settings</td>
+				<td id="Settings_Close" class="cancel"></td>
+				</tr>
+			</table>
+		</div>	
+		<div id="SettingsMenu_List">
+			<table width="100%" border="0" cellspacing='0' cellpadding='0' >
+			  <tbody>
+				<tr><td class="tdStyle_4">My membership</td></tr>
+				<tr><td id="JoinMenu" class="tdStyle_1">Join groups</td></tr>
+				<tr><td id="LeaveMenu" class="tdStyle_1">Leave groups</td></tr>
+				<tr><td id="JoinCompanyMenu" class="tdStyle_1">Join your company</td></tr>
+				<tr><td id="PrivacyMenu" class="tdStyle_1">Privacy settings</td></tr>
+				<tr><td class="tdStyle_4">My groups</td></tr>
+				<tr><td id="CreateGroupMenu" class="tdStyle_1">Create groups</td></tr>
+			  	<tr><td id="InviteMenu" class="tdStyle_1">Invite people</td></tr>
+			  	<tr><td id="AuthorizeMenu" class="tdStyle_1">Authorize members</td></tr>
+			  	<tr><td id="CloseDeleteMenu" class="tdStyle_1">Close groups</td></tr>
+			  	<tr><td class="tdStyle_4">Corporate user</td></tr>
+				<tr><td id="CreateGroupMenu" class="tdStyle_1">Setup a company</td></tr>
+			  	<tr><td class="tdStyle_4">Other settings</td></tr>
+				<tr><td id="TempUnitMenu" class="tdStyle_1"><input type='checkbox' id='cbT' class='cbx hidden' /><label for='cbT' class='lblT'></label><span id="TempUnitText"></span></td></tr>
+				<tr><td id="Notifications" class="tdStyle_1"><input type='checkbox' id='cbN' class='cbx hidden' /><label for='cbN' class='lblT'></label>Receive notifications</td></tr>
+				<tr><td class="tdStyle_1"><div class="text1">Currently logged</div><div id="CurrentlyLoggedUser"></div></td></tr>
+				
+			  </tbody>
+			</table>
+			
+			
+			</div>
+			<div id="Logout">Logout</div>	
+		</div>
+
+		<div id="Settings_join_groups">
+			<div class="HeaderContainer">
+			<table  width="100%" border="0" cellspacing='0' cellpadding='0' >
+				<tr>
+				<td id="Settings_JoinGroups" class="Back"></td>
+				<td class='Header_1'>Join Groups</td>
+				<td id="Settings_join_groups_Close" class="cancel"></td>
+				</tr>
+			</table>
+			</div>
+			<div id="JoinGroupsList" class="groups_list"></div>
+			<input id="Join" class="JoinLeaveButton" value="Select a group" disabled type="button">
+		</div>
+		
+		<div id="Settings_leave_groups">
+			<div class="HeaderContainer">
+			<table  width="100%" border="0" cellspacing='0' cellpadding='0' >
+				<tr>
+				<td id="Settings_LeaveGroups" class="Back"></td>
+				<td class='Header_1'>Leave Groups</td>
+				<td id="Settings_leave_groups_Close" class="cancel"></td>
+				</tr>
+			</table>
+			</div>
+			<div id="LeaveGroupsList" class="groups_list"></div>
+			<input id="Leave" class="JoinLeaveButton" value="Select a group" disabled type="button">
+		</div>
+
+		<div id="Settings_group_privacy">
+			<div class="HeaderContainer">
+			<table  width="100%" border="0" cellspacing='0' cellpadding='0' >
+				<tr>
+				<td id="Settings_GroupPrivacy" class="Back"></td>
+				<td class='Header_1'>Privacy settings</td>
+				<td id="Settings_group_privacy_Close" class="cancel"></td>
+				</tr>
+			</table>
+			</div>
+			<div id="PrivacyList" class="groups_list"></div>
+		</div>
+		
+		<div id="Settings_create_groups">
+					<div class="HeaderContainer">
+			<table  width="100%" border="0" cellspacing='0' cellpadding='0' >
+				<tr>
+				<td id="SettingsCreateGroups" class="Back"></td>
+				<td class='Header_1'>Create a group</td>
+				<td id="Settings_create_groups_Close" class="cancel"></td>
+				</tr>
+			</table>
+			</div>
+			<div id="CreateGroup_Params">	
+			<table width="100%" border="0" cellspacing='0' cellpadding='0' >
+			  <tbody>
+				<tr><td class="tdStyle_1"><input id="groupname" class="TextBox" type="text"></td></tr>
+				  <tr><td class="tdStyle_5"><div class="text1">Require a mood update</div><div id="update_freq">Every hour</div></td></tr>
+				<tr><td class="tdStyle_1"><input type='checkbox' id='cbP' class='cbx hidden' /><label for='cbP' class='lblT'></label><span id="TempUnitText">This is a private group</span></td></tr>
+			  </tbody>
+			</table>
+			</div>	
+			<div id="FrequencyOptions">
+							<div class="HeaderContainer">
+				
+			<table  width="100%" border="0" cellspacing='0' cellpadding='0' >
+				<tr>
+				<td class="Header_2">Require a mood update</td>
+				<td id="FrequencyOptions_Close" class="cancel"></td>
+				</tr>
+			</table>
+		</div>				
+			 <table id="frequencyOptions_list" width="100%" border="0" cellspacing='0' cellpadding='0' >
+			  <tbody>
+				<tr id="3600" class="highlighted"><td class="tdStyle_1">Every hour</td></tr>
+				<tr id="10800"><td class="tdStyle_1">Every 3 hours</td></tr>
+				<tr id="21600"><td class="tdStyle_1">Every 6 hours</td></tr>
+				<tr id="43200"><td class="tdStyle_1">Every 12 hours</td></tr>
+				<tr id="86400"><td class="tdStyle_1">Every day</td></tr>
+			  </tbody>
+			</table>
+			</div>
+		
+			<div class="ButtonArea"><input id="CreateGroupButton" value="Create group" disabled type="button"></div>
+			
+		</div>
+	
+	</div>
+
+	
+
+	<div id="MoodInput_Container"> 
+		<div id="MoodInput_Close" class="cancel"></div>
+		<div id="L1" class="LevelOff Level1"></div>
+		<div id="L2" class="LevelOff Level2"></div>
+		<div id="L3" class="LevelOff Level3"></div>		
+
+		<div id="validate_button" class="slider_widget validate_button1_cl" ></div>
+
+		<div id="cloud_slider_ico" class="slider_ico"></div>
+		<div id="rain_slider_ico" class="slider_ico"></div>
+		<div id="thunder_slider_ico" class="slider_ico"></div>
+		<div id="sun_rain_slider_ico" class="slider_ico"></div>
+		<div id="sun_clouds_slider_ico" class="slider_ico"></div>
+		<div id="sun_slider_ico" class="slider_ico"></div>
+
+
+	</div>	
+	
+		<div id="selected_group" class="HeaderContainer">
+			<table  border='0' cellspacing='0' cellpadding='0' width='100%'>
+				<tr>
+					<td id="SandwichIcon"></td>
+					<td id="header_groups_text"></td>
+					<td id="Privacy_status"></td>
+				</tr>
+			</table>		
+		</div>
+	<div id="Group_menu_container">
+		<div id="user_groups_list"></div>
+	</div>
+
+	<div id="Animation_container">
+		<div id="Update_container">			
+			
+			<div id="Update_weather" class="Update"></div>
+		</div>
+		<div id="ContentArea">
+			<div id="LastUpdate"></div>
+			<div id="GroupLegend">Your group</div>
+
+			
+			
+			<div id="rain" class="element"></div>
+
+			<div id="grass" class="element"></div> 
+			<div id="landscape" class="element"></div>
+			<div id="rainbow" class="element"></div>
+
+			<div id="sun" class="element"></div>
+
+			<div id="cloudBlitz1" class="element"></div>
+			<div id="cloudBlitz2" class="element"></div>
+			<div id="cloudBlitz3" class="element"></div>
+
+			<div id="cloudRain1" class="element"></div>
+			<div id="cloudRain2" class="element"></div>
+			<div id="cloudRain3" class="element"></div>
+
+			<div id="drops" class="element"></div>
+			<div id="thunderSky" class="element"></div>
+
+			<div id="cloud1" class="element"></div>
+			<div id="cloud2" class="element"></div>
+			<div id="cloud3" class="element"></div>			
+
+		</div>
+			<div id="TrendDetails">
+				<div id="TrendDetailsMenu">
+					<div class="TrendDetailsMenuButton" id="48F">Day</div>
+					<div class="TrendDetailsMenuButton" id="336F">Week</div>
+					<div class="TrendDetailsMenuButton" id="1440F">Month</div>
+					<div class="TrendDetailsMenuButton" id="17280F">Year</div>
+				</div>
+
+				<table height="60%" width="100%" border="0">
+				  <tbody>
+					<tr>
+				  	  <td id="ind_sun" class="tdStyle_3"></td>
+					  <td id="ind_clouds" class="tdStyle_3"></td>
+					  <td id="ind_rain" class="tdStyle_3"></td>
+				   	  <td id="ind_thunder" class="tdStyle_3"></td>
+					</tr>					
+				  </tbody>
+				</table>
+			</div>
+	</div>
+	<div id="trend_data">
+<table width="100%" border="0">
+	<tbody>
+		<tr>
+			<td id="temp_indicator" ></td>
+			<td id="thermometerTd">
+				<div id="thermo-bottom"></div>
+				<div id="thermometer">    
+					<div class="thermometer-outer">
+						<div class="thermometer-inner-cold" ></div>
+					</div>
+				</div>
+			</td>
+			<td width="1px"><div id="trend"></div></td>
+			<td id="MembersList"><div id="MembersCount"></div><div id="MembersLabel">Members</div></td>
+		</tr>
+	</tbody>
+</table>	
+	</div>
+	<div id="user_data">
+		<table border='0' cellspacing='0' cellpadding='0' width='100%'>
+			<tr id='UserDataRowMe' >
+				<td class='tdStyle_2'><div id='UserLoginMe'>Me</div><div id='UserInputDateMe'></div></td>
+				<td class='tdStyle_2'><div id='cProgressBkgrdMe'><div id='cProgressBullet1Me'></div><div id='cProgressBullet2Me'></div><div id='cProgressBullet3Me'></div></div></td>
+				<td id='WeatherIcoMe'></td>
+				<td><div id="UpdateMoodButton" class ="UpdateMoodInputRequired"></div></td>
+			</tr>
+		</table>
+	</div>	
+</div>
+
+<script src="js/jquery.js"></script>
+<script src="js/store.js"></script>
+<script src="js/TweenLite.min.js"></script>
+<script src="js/TimelineLite.min.js"></script>
+<script src="js/CSSPlugin.min.js"></script>
+<script src="js/ColorPropsPlugin.min.js"></script>
+<script src="js/vars.js"></script>
+<script src="js/func.js"></script>
+<script src="js/mouseActions.js"></script>
+<script src="js/animation.js"></script>
+<script src="js/moment.js"></script>
+<script src="js/timezone.js"></script>
+<script src="js/jstz.main.js"></script>
+
+</body>
+</html>
